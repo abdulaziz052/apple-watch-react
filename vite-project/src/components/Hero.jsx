@@ -1,35 +1,25 @@
 import React from 'react'
 import watch from './intro-bg.png'
+import Info from './Info'
 
 function Hero() {
-  return (
-    <div>
-         <section className="hero">
-        <div className="container hero__container">
-            <div className="hero__info">
-                <h1 className="hero__info__title">
-                    Freedom calls.
-                </h1>
-           <div className="hero__info__two">
-            <div className="line"></div>
-            <p className="hero__info__text">
-                Answer a call from your surfboard. Ask Siri to send a message. Stream your favorite songs on your run. And do it all while leaving your phone behind. Introducing Apple Watch Series 3 with cellular. Now you have the freedom to go with just your watch.
-            </p>
-           </div>
-                <a href="#" className="main-link">
-                    Watch the keynote
-                </a>
-    
-            </div>
-    
+    const info = {
+        title: '  Freedom calls.',
+        text: '   Answer a call from your surfboard. Ask Siri to send a message. Stream your favorite songs on your run. And do it all while leaving your phone behind. Introducing Apple Watch Series 3 with cellular. Now you have the freedom to go with just your watch.',
+        link: 'Watch the keynote'
+    }
+
+    return (
+        <div>
+            <section className="hero">
+                <div className="container hero__container">
+                    <Info title={info.title} text={info.text} link={info.link} />
+                </div>
+                <img src={watch} width="587px" alt="hero__img" className="hero__img" />
+            </section>
+            <hr />
         </div>
-        <img src={watch} width="587px" alt="hero__img" className="hero__img"/>
-                   
-       </section>
-       <hr/>
-    
-    </div>
-  )
+    )
 }
 
 export default Hero

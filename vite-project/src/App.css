@@ -120,9 +120,11 @@ body{
   line-height: 24px;
   letter-spacing: 0em;
   text-align: left;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   color: #777777;
-  margin-left: 40px;
+  margin-left: 7px;
+  border-left: 3px solid  #777777;
+  padding-left: 20px;
 }
 .hero__info__two{
   display: flex;
@@ -215,7 +217,8 @@ body{
   letter-spacing: 0em;
   text-align: left;
   color: #777777;
-  margin-left: 40px;
+  margin-left: 10px;
+  border-left: 3px solid gray;
 }
 .line.active{
   height: 96px;
@@ -284,4 +287,23 @@ body{
   .nav{
       display: none;
   }
+}
+.your__container .hero__info{
+  color: white;
+  margin-left: auto;
+}
+.your__container .hero__info__title{
+  color: white;
+}
+.your__container .hero__info__text{
+  border-left: 3px solid rgb(255, 255, 255);
+  color: white;
+  padding-left: 20px;
+}
+.nike__info .nike__text{
+  border-left: 3px solid rgb(0, 0, 0);
+  padding-left: 20px;
+}
+.your__container .line{
+  border-left: 3px solid rgb(255, 255, 255);
 }
